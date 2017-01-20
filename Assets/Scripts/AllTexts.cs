@@ -60,4 +60,9 @@ public class AllTexts : MonoBehaviour {
 			counter ++;
 		}
 	}
+
+	public int getCounter () {
+
+		return counter;
+	}
 }

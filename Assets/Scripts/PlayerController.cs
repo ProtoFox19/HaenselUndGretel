@@ -24,10 +24,14 @@ public class PlayerController : MonoBehaviour {
 
 	private AllTexts allTexts;
 
+	public float PlayerNumber;
+
 
 
 
 	public GameObject interaktionWalk;
+
+	public GameObject interactionSpeak;
 
 	//public GameObject gretelINT;
 
@@ -44,7 +48,7 @@ public class PlayerController : MonoBehaviour {
 
 		anim = GetComponent<Animator>();
 
-		targetWayPoint = wayPoint [currentWayPoint];
+		//targetWayPoint = wayPoint [currentWayPoint];
 
 		allTexts = text.GetComponent<AllTexts> ();
 
@@ -59,50 +63,30 @@ public class PlayerController : MonoBehaviour {
 		// Standing State
 		if (walks == false) {
 
-		
-
-			Debug.Log (allTexts.currentSpeaker ());
+			if ((allTexts.currentSpeaker () == PlayerNumber)) {
 
 
-
-			if (allTexts.currentSpeaker () == 1) {
-
-				interaktionWalk.SetActive (false);
-
-			} else {
-
-				interaktionWalk.SetActive (true);
-			}
+				if (allTexts.messages.Length <= allTexts.getCounter()) {
 
 
-			if (allTexts.currentSpeaker () == 2) {
 
-				interaktionWalk.SetActive (false);
+					interaktionWalk.SetActive (true);
 
-			} else {
 
-				interaktionWalk.SetActive (true);
-			}
 
-			if (allTexts.currentSpeaker () == 3) {
+					//interactionSpeak.SetActive (false);
 
-				interaktionWalk.SetActive (false);
+				} else { interaktionWalk.SetActive (false); 
+				
+				
+				}
+
+				//interaktionWalk.SetActive (false);
 
 			} else {
 
 				interaktionWalk.SetActive (true);
 			}
-
-			if (allTexts.currentSpeaker () == 4) {
-
-				interaktionWalk.SetActive (false);
-
-			} else {
-
-				interaktionWalk.SetActive (true);
-			}
-
-
 
 			anim.SetBool ("isFront", true);
 			anim.SetBool ("isSide", false);
@@ -128,26 +112,6 @@ public class PlayerController : MonoBehaviour {
 				anim.SetBool ("isFront", true);
 
 			}
-
-			if (wayPoint [currentWayPoint].GetComponent<Waypoint> ().speaks == true) {
-
-
-		/*		if (allTexts.countSpeaker () == 2) {
-
-					haenselTextINT.SetActive (true);
-
-					anim.SetBool ("speaksFront", true);
-					anim.SetBool ("speaksSide", false);
-
-				} else {
-
-					haenselTextINT.SetActive (false);
-
-				}     */
-
-				}
-
-
 
 
 		}
