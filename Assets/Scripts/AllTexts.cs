@@ -23,8 +23,28 @@ public class AllTexts : MonoBehaviour {
 	private int speakerCounter = 0;
 
 
+    public GameObject haenselSpeaker; // 2
 
-	public GameObject [] speakingCheckpoints;
+    public GameObject gretelSpeaker; // 1
+
+    public GameObject momSpeaker; // 3
+
+    public GameObject dadSpeaker; // 4
+
+    public GameObject duckSpeaker; // 5
+
+    public GameObject haenselWalk; // 2
+
+    public GameObject gretelWalk; // 1
+
+    public GameObject momWalk; // 3
+
+    public GameObject dadWalk; // 4
+
+    public GameObject duckWalk; // 5
+
+
+    public GameObject [] speakingCheckpoints;
 
 
 
@@ -52,14 +72,30 @@ public class AllTexts : MonoBehaviour {
 	}
 
 	public void count () {
+        counter++;
 
-		if (counter < messages.Length) {
+        if(counter >= messages.Length-1)
+        {
+             haenselSpeaker.SetActive(false); 
 
-			text.text = messages [counter];
+             gretelSpeaker.SetActive(false); 
 
-			counter ++;
-		}
-	}
+             momSpeaker.SetActive(false);
+
+            dadSpeaker.SetActive(false);
+
+            duckSpeaker.SetActive(false);
+
+            haenselWalk.SetActive(true);
+            gretelWalk.SetActive(true);
+
+            momWalk.SetActive(true);
+
+            dadWalk.SetActive(true);
+
+            duckWalk.SetActive(true);
+        }
+    }
 
 	public int getCounter () {
 

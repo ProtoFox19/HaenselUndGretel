@@ -66,7 +66,7 @@ public class PlayerController : MonoBehaviour {
 			if ((allTexts.currentSpeaker () == PlayerNumber)) {
 
 
-				if (allTexts.messages.Length <= allTexts.getCounter()) {
+				/*if (allTexts.messages.Length <= allTexts.getCounter()) {
 
 
 
@@ -79,9 +79,9 @@ public class PlayerController : MonoBehaviour {
 				} else { interaktionWalk.SetActive (false); 
 				
 				
-				}
+				}*/
 
-				//interaktionWalk.SetActive (false);
+				interaktionWalk.SetActive (false);
 
 			} else {
 
