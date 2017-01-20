@@ -3,100 +3,109 @@ using System.Collections;
 
 public class TextInteraktion : MonoBehaviour {
 
-	public bool gretel = false; // 1
 
-	public bool haensel = false; // 2
+	public GameObject haenselSpeaker; // 2
 
-	public bool mom = false; // 3
+	public GameObject gretelSpeaker; // 1
 
-	public bool dad = false; // 4
+	public GameObject momSpeaker; // 3
 
+	public GameObject dadSpeaker; // 4
 
-
-	public GameObject haenseltest;
-
-	public GameObject greteltest;
+	public GameObject duckSpeaker; // 5
 
 
+	public GameObject haenselWalk; // 2
+
+	public GameObject gretelWalk; // 1
+
+	public GameObject momWalk; // 3
+
+	public GameObject dadWalk; // 4
+
+	public GameObject duckWalk; // 5
 
 
-	private void OnMouseDown() {
+	void Start () {
 
-		GameObject.FindGameObjectWithTag ("AllText").GetComponent<AllTexts> ().countSpeaker ();
-
-
-		GameObject.FindGameObjectWithTag ("AllText").GetComponent<AllTexts> ().count ();
 
 
 	}
 
-
-
-
-	/*void Update () {
-
-
-		if (gretel == true) {
-
-			// Aktiviere Gretel, wenn spricht
-			if (GameObject.FindGameObjectWithTag ("AllText").GetComponent<AllTexts>().currentSpeaker() == 1) {
-
-				gameObject.SetActive (true);
-
-
-				Debug.Log (GameObject.FindGameObjectWithTag ("AllText").GetComponent<AllTexts> ().currentSpeaker ());
-
-
-
-			} else { gameObject.SetActive (false); }
-
-
-		}
-
-
-		if (haensel == true) {
-
-			// Aktiviere haensel, wenn spricht
-			if (GameObject.FindGameObjectWithTag ("AllText").GetComponent<AllTexts>().currentSpeaker() == 2) {
-
-				gameObject.SetActive (true);
-
-				Debug.Log (GameObject.FindGameObjectWithTag ("AllText").GetComponent<AllTexts> ().currentSpeaker ());
-
-
-
-			} else { gameObject.SetActive (false); }
-
-
-		}
-
-	}*/
-
-
-
 	void Update () {
 
-			// Aktiviere haensel, wenn spricht
+			// Aktiviere gretel, wenn spricht
 			if (GameObject.FindGameObjectWithTag ("AllText").GetComponent<AllTexts>().currentSpeaker() == 1) {
 
-				//gameObject.SetActive (true);
 
-				greteltest.SetActive (true);
-				haenseltest.SetActive (false);
+				gretelSpeaker.SetActive (true);
+				haenselSpeaker.SetActive (false);
+				momSpeaker.SetActive (false);
+				dadSpeaker.SetActive (false);
+				duckSpeaker.SetActive (false);
+
+		/*	haenselWalk.SetActive (false);
+			gretelWalk.SetActive (false);
+			momWalk.SetActive (false);
+			dadWalk.SetActive (false);
+			duckWalk.SetActive (false); */
 
 			}
 
 			// Aktiviere haensel, wenn spricht
 			if (GameObject.FindGameObjectWithTag ("AllText").GetComponent<AllTexts>().currentSpeaker() == 2) {
 
-				//gameObject.SetActive (true);
 
-				haenseltest.SetActive (true);
-				greteltest.SetActive (false);
+				haenselSpeaker.SetActive (true);
+				gretelSpeaker.SetActive (false);
+				momSpeaker.SetActive (false);
+				dadSpeaker.SetActive (false);
+				duckSpeaker.SetActive (false);
+
 
 			}
 
+		// Aktiviere mom, wenn spricht
+		if (GameObject.FindGameObjectWithTag ("AllText").GetComponent<AllTexts>().currentSpeaker() == 3) {
+
+
+			haenselSpeaker.SetActive (false);
+			gretelSpeaker.SetActive (false);
+			momSpeaker.SetActive (true);
+			dadSpeaker.SetActive (false);
+			duckSpeaker.SetActive (false);
+
+
+
 		}
 
+		// Aktiviere Dad, wenn spricht
+		if (GameObject.FindGameObjectWithTag ("AllText").GetComponent<AllTexts>().currentSpeaker() == 4) {
 
+
+			haenselSpeaker.SetActive (false);
+			gretelSpeaker.SetActive (false);
+			momSpeaker.SetActive (false);
+			dadSpeaker.SetActive (true);
+			duckSpeaker.SetActive (false);
+
+	
+
+		}
+
+		// Aktiviere Ente, wenn spricht
+		if (GameObject.FindGameObjectWithTag ("AllText").GetComponent<AllTexts>().currentSpeaker() == 5) {
+
+
+			haenselSpeaker.SetActive (false);
+			gretelSpeaker.SetActive (false);
+			momSpeaker.SetActive (false);
+			dadSpeaker.SetActive (false);
+			duckSpeaker.SetActive (true);
+
+
+		}
+
+		}
+		
 }

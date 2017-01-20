@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 13a4ccefe4410472a9e4dc21f3043c1f
-timeCreated: 1484777526
+guid: 9eb7ec22aec8b4b718367656b5793f56
+timeCreated: 1484789996
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: eyes_hg_side_0
-    21300002: eyes_hg_side_1
-    21300004: eyes_hg_side_2
-    21300006: eyes_hg_side_3
+    21300000: sheet_dad_side1_0
+    21300002: sheet_dad_side1_1
+    21300004: sheet_dad_side1_2
+    21300006: sheet_dad_side1_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -57,54 +57,54 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: eyes_hg_side_0
+      name: sheet_dad_side1_0
       rect:
         serializedVersion: 2
-        x: 424
-        y: 1583
-        width: 284
-        height: 365
+        x: 37
+        y: 622
+        width: 1393
+        height: 1522
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: eyes_hg_side_1
+      name: sheet_dad_side1_1
       rect:
         serializedVersion: 2
-        x: 1469
-        y: 1611
-        width: 295
-        height: 292
+        x: 1619
+        y: 893
+        width: 806
+        height: 929
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: eyes_hg_side_2
+      name: sheet_dad_side1_2
       rect:
         serializedVersion: 2
-        x: 2379
-        y: 1586
-        width: 315
-        height: 278
+        x: 1783
+        y: 900
+        width: 47
+        height: 7
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: eyes_hg_side_3
+      name: sheet_dad_side1_3
       rect:
         serializedVersion: 2
-        x: 3272
-        y: 1543
-        width: 304
-        height: 259
+        x: 2581
+        y: 865
+        width: 1010
+        height: 1213
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

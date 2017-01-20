@@ -1,0 +1,381 @@
+fileFormatVersion: 2
+guid: 756cac0a0e52447a1a44ecbb61816f52
+timeCreated: 1484774595
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: sheet_hg_2_0
+    21300002: sheet_hg_2_1
+    21300004: sheet_hg_2_2
+    21300006: sheet_hg_2_3
+    21300008: sheet_hg_2_4
+    21300010: sheet_hg_2_5
+    21300012: sheet_hg_2_6
+    21300014: sheet_hg_2_7
+    21300016: sheet_hg_2_8
+    21300018: sheet_hg_2_9
+    21300020: sheet_hg_2_10
+    21300022: sheet_hg_2_11
+    21300024: sheet_hg_2_12
+    21300026: sheet_hg_2_13
+    21300028: sheet_hg_2_14
+    21300030: sheet_hg_2_15
+    21300032: sheet_hg_2_16
+    21300034: sheet_hg_2_17
+    21300036: sheet_hg_2_18
+    21300038: sheet_hg_2_19
+    21300040: sheet_hg_2_20
+    21300042: sheet_hg_2_21
+    21300044: sheet_hg_2_22
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sheet_hg_2_0
+      rect:
+        serializedVersion: 2
+        x: 2474
+        y: 1078
+        width: 1329
+        height: 1070
+      alignment: 9
+      pivot: {x: 0.52324885, y: 0.014355012}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_hg_2_1
+      rect:
+        serializedVersion: 2
+        x: 2844
+        y: 2146
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_hg_2_2
+      rect:
+        serializedVersion: 2
+        x: 2799
+        y: 2128
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_hg_2_3
+      rect:
+        serializedVersion: 2
+        x: 2443
+        y: 1932
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_hg_2_4
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1571
+        width: 151
+        height: 307
+      alignment: 9
+      pivot: {x: 0.7232211, y: 0.5274483}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_hg_2_5
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 1538
+        width: 150
+        height: 308
+      alignment: 9
+      pivot: {x: 0.21911377, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_hg_2_6
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 1447
+        width: 103
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_hg_2_7
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 1418
+        width: 107
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_hg_2_8
+      rect:
+        serializedVersion: 2
+        x: 2794
+        y: 1067
+        width: 24
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_hg_2_9
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 453
+        width: 468
+        height: 144
+      alignment: 9
+      pivot: {x: 0.974146, y: 0.5195058}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_hg_2_10
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 462
+        width: 359
+        height: 126
+      alignment: 9
+      pivot: {x: 0.961624, y: 0.47770715}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_hg_2_11
+      rect:
+        serializedVersion: 2
+        x: 1655
+        y: 353
+        width: 365
+        height: 328
+      alignment: 9
+      pivot: {x: 0.52308667, y: 0.93674415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_hg_2_12
+      rect:
+        serializedVersion: 2
+        x: 2178
+        y: 353
+        width: 365
+        height: 328
+      alignment: 9
+      pivot: {x: 0.523087, y: 0.93674415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_hg_2_13
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 237
+        width: 7
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_hg_2_14
+      rect:
+        serializedVersion: 2
+        x: 1634
+        y: 23
+        width: 450
+        height: 254
+      alignment: 9
+      pivot: {x: 0.93693465, y: 0.45576584}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_hg_2_15
+      rect:
+        serializedVersion: 2
+        x: 2157
+        y: 23
+        width: 450
+        height: 254
+      alignment: 9
+      pivot: {x: 0.9619027, y: 0.4447073}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_hg_2_16
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 21
+        width: 855
+        height: 142
+      alignment: 9
+      pivot: {x: 0.9796425, y: 0.49999952}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_hg_2_17
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 165
+        width: 10
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_hg_2_18
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 70
+        width: 26
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_hg_2_19
+      rect:
+        serializedVersion: 2
+        x: 3045
+        y: 25
+        width: 27
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_hg_2_20
+      rect:
+        serializedVersion: 2
+        x: 3073
+        y: 25
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_hg_2_21
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 18
+        width: 325
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_hg_2_22
+      rect:
+        serializedVersion: 2
+        x: 3530
+        y: 25
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

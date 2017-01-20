@@ -1,17 +1,16 @@
 fileFormatVersion: 2
-guid: cdf08acd1823c41cb89da3cfd098bdb9
-timeCreated: 1484784662
+guid: e53cb79e65df249d5ad06c3f54d495e8
+timeCreated: 1484789952
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: eyes_hg_0
-    21300002: eyes_hg_1
-    21300004: eyes_hg_2
-    21300006: eyes_hg_3
-    21300008: eyes_hg_4
-    21300010: eyes_hg_5
-    21300012: eyes_hg_6
-    21300014: eyes_hg_7
+    21300000: sheet_dad1_0
+    21300002: sheet_dad1_1
+    21300004: sheet_dad1_2
+    21300006: sheet_dad1_3
+    21300008: sheet_dad1_4
+    21300010: sheet_dad1_5
+    21300012: sheet_dad1_6
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -61,106 +60,93 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: eyes_hg_0
+      name: sheet_dad1_0
       rect:
         serializedVersion: 2
-        x: 208
-        y: 251
-        width: 317
-        height: 374
+        x: 61
+        y: 736
+        width: 1226
+        height: 1387
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: eyes_hg_1
+      name: sheet_dad1_1
       rect:
         serializedVersion: 2
-        x: 1070
-        y: 246
-        width: 360
-        height: 281
+        x: 2854
+        y: 2019
+        width: 37
+        height: 11
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: eyes_hg_2
+      name: sheet_dad1_2
       rect:
         serializedVersion: 2
-        x: 1997
-        y: 243
-        width: 349
-        height: 320
+        x: 1850
+        y: 1966
+        width: 59
+        height: 7
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: eyes_hg_3
+      name: sheet_dad1_3
       rect:
         serializedVersion: 2
-        x: 2921
-        y: 251
-        width: 324
-        height: 337
+        x: 2682
+        y: 1079
+        width: 964
+        height: 930
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: eyes_hg_4
+      name: sheet_dad1_4
       rect:
         serializedVersion: 2
-        x: 559
-        y: 254
-        width: 312
-        height: 365
+        x: 1337
+        y: 888
+        width: 1268
+        height: 1071
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: eyes_hg_5
+      name: sheet_dad1_5
       rect:
         serializedVersion: 2
-        x: 1461
-        y: 243
-        width: 351
-        height: 286
+        x: 1718
+        y: 397
+        width: 118
+        height: 114
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: eyes_hg_6
+      name: sheet_dad1_6
       rect:
         serializedVersion: 2
-        x: 2383
-        y: 251
-        width: 359
-        height: 315
+        x: 2163
+        y: 393
+        width: 105
+        height: 110
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: eyes_hg_7
-      rect:
-        serializedVersion: 2
-        x: 3276
-        y: 254
-        width: 362
-        height: 337
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

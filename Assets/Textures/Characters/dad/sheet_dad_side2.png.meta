@@ -1,17 +1,18 @@
 fileFormatVersion: 2
-guid: cdf08acd1823c41cb89da3cfd098bdb9
-timeCreated: 1484784662
+guid: b49c9513877b944de872100bc3b5fc37
+timeCreated: 1484790013
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: eyes_hg_0
-    21300002: eyes_hg_1
-    21300004: eyes_hg_2
-    21300006: eyes_hg_3
-    21300008: eyes_hg_4
-    21300010: eyes_hg_5
-    21300012: eyes_hg_6
-    21300014: eyes_hg_7
+    21300000: sheet_dad_side2_0
+    21300002: sheet_dad_side2_1
+    21300004: sheet_dad_side2_2
+    21300006: sheet_dad_side2_3
+    21300008: sheet_dad_side2_4
+    21300010: sheet_dad_side2_5
+    21300012: sheet_dad_side2_6
+    21300014: sheet_dad_side2_7
+    21300016: sheet_dad_side2_8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -61,106 +62,119 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: eyes_hg_0
+      name: sheet_dad_side2_0
       rect:
         serializedVersion: 2
-        x: 208
-        y: 251
-        width: 317
-        height: 374
+        x: 2011
+        y: 1525
+        width: 152
+        height: 135
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: eyes_hg_1
+      name: sheet_dad_side2_1
       rect:
         serializedVersion: 2
-        x: 1070
-        y: 246
-        width: 360
-        height: 281
+        x: 2337
+        y: 1527
+        width: 101
+        height: 155
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: eyes_hg_2
+      name: sheet_dad_side2_2
       rect:
         serializedVersion: 2
-        x: 1997
-        y: 243
-        width: 349
-        height: 320
+        x: 2024
+        y: 1139
+        width: 118
+        height: 129
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: eyes_hg_3
+      name: sheet_dad_side2_3
       rect:
         serializedVersion: 2
-        x: 2921
-        y: 251
-        width: 324
-        height: 337
+        x: 2392
+        y: 1117
+        width: 76
+        height: 150
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: eyes_hg_4
+      name: sheet_dad_side2_4
       rect:
         serializedVersion: 2
-        x: 559
-        y: 254
-        width: 312
-        height: 365
+        x: 1891
+        y: 17
+        width: 806
+        height: 851
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: eyes_hg_5
+      name: sheet_dad_side2_5
       rect:
         serializedVersion: 2
-        x: 1461
-        y: 243
-        width: 351
-        height: 286
+        x: 1942
+        y: 863
+        width: 6
+        height: 4
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: eyes_hg_6
+      name: sheet_dad_side2_6
       rect:
         serializedVersion: 2
-        x: 2383
-        y: 251
-        width: 359
-        height: 315
+        x: 273
+        y: 263
+        width: 448
+        height: 209
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: eyes_hg_7
+      name: sheet_dad_side2_7
       rect:
         serializedVersion: 2
-        x: 3276
-        y: 254
-        width: 362
-        height: 337
+        x: 1015
+        y: 74
+        width: 756
+        height: 666
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_dad_side2_8
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 23
+        width: 47
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

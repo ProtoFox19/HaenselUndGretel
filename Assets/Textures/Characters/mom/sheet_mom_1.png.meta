@@ -1,25 +1,22 @@
 fileFormatVersion: 2
-guid: ece14e3e26b264dd68abc5f1a171a3f8
-timeCreated: 1484781651
+guid: 635d381568c584238814e5380f663f7e
+timeCreated: 1484781599
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: sheet_mom_side_0
-    21300002: sheet_mom_side_1
-    21300004: sheet_mom_side_2
-    21300006: sheet_mom_side_3
-    21300008: sheet_mom_side_4
-    21300010: sheet_mom_side_5
-    21300012: sheet_mom_side_6
-    21300014: sheet_mom_side_7
-    21300016: sheet_mom_side_8
-    21300018: sheet_mom_side_9
-    21300020: sheet_mom_side_10
-    21300022: sheet_mom_side_11
-    21300024: sheet_mom_side_12
-    21300026: sheet_mom_side_13
-    21300028: sheet_mom_side_14
-    21300030: sheet_mom_side_15
+    21300000: sheet_mom_1_0
+    21300002: sheet_mom_1_1
+    21300004: sheet_mom_1_2
+    21300006: sheet_mom_1_3
+    21300008: sheet_mom_1_4
+    21300010: sheet_mom_1_5
+    21300012: sheet_mom_1_6
+    21300014: sheet_mom_1_7
+    21300016: sheet_mom_1_8
+    21300018: sheet_mom_1_9
+    21300020: sheet_mom_1_10
+    21300022: sheet_mom_1_11
+    21300024: sheet_mom_1_12
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -69,77 +66,25 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sheet_mom_side_0
+      name: sheet_mom_1_0
       rect:
         serializedVersion: 2
-        x: 2432
-        y: 2105
-        width: 24
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: sheet_mom_side_1
-      rect:
-        serializedVersion: 2
-        x: 2155
-        y: 681
-        width: 667
-        height: 1404
+        x: 248
+        y: 543
+        width: 1084
+        height: 1585
       alignment: 9
-      pivot: {x: 0.5, y: -0.00015419637}
+      pivot: {x: 0.51554716, y: 0.0126573825}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sheet_mom_side_2
+      name: sheet_mom_1_1
       rect:
         serializedVersion: 2
-        x: 2348
-        y: 2083
-        width: 22
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: sheet_mom_side_3
-      rect:
-        serializedVersion: 2
-        x: 3040
-        y: 698
-        width: 668
-        height: 1388
-      alignment: 9
-      pivot: {x: 0.5126149, y: 0.002175235}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: sheet_mom_side_4
-      rect:
-        serializedVersion: 2
-        x: 155
-        y: 205
-        width: 1421
-        height: 1692
-      alignment: 9
-      pivot: {x: 0.50395334, y: 0.0036342882}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: sheet_mom_side_5
-      rect:
-        serializedVersion: 2
-        x: 2136
-        y: 1149
-        width: 4
+        x: 3244
+        y: 2086
+        width: 32
         height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -147,11 +92,89 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sheet_mom_side_6
+      name: sheet_mom_1_2
       rect:
         serializedVersion: 2
-        x: 2120
-        y: 1092
+        x: 230
+        y: 1591
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_mom_1_3
+      rect:
+        serializedVersion: 2
+        x: 1919
+        y: 692
+        width: 758
+        height: 1385
+      alignment: 9
+      pivot: {x: 0.5, y: 0.013265165}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_mom_1_4
+      rect:
+        serializedVersion: 2
+        x: 2989
+        y: 698
+        width: 793
+        height: 1386
+      alignment: 9
+      pivot: {x: 0.51416814, y: 0.0034833194}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_mom_1_5
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 1199
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_mom_1_6
+      rect:
+        serializedVersion: 2
+        x: 2674
+        y: 1178
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_mom_1_7
+      rect:
+        serializedVersion: 2
+        x: 2679
+        y: 1043
+        width: 4
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_mom_1_8
+      rect:
+        serializedVersion: 2
+        x: 2675
+        y: 1019
         width: 5
         height: 10
       alignment: 0
@@ -160,119 +183,54 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sheet_mom_side_7
+      name: sheet_mom_1_9
       rect:
         serializedVersion: 2
-        x: 1687
-        y: 907
-        width: 312
-        height: 153
+        x: 2677
+        y: 738
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_mom_1_10
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 720
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_mom_1_11
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 48
+        width: 1104
+        height: 431
       alignment: 9
-      pivot: {x: 0.5, y: 0.09611082}
+      pivot: {x: 0.019134466, y: 0.44786328}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sheet_mom_side_8
+      name: sheet_mom_1_12
       rect:
         serializedVersion: 2
-        x: 2122
-        y: 1026
-        width: 17
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: sheet_mom_side_9
-      rect:
-        serializedVersion: 2
-        x: 2139
-        y: 998
-        width: 6
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: sheet_mom_side_10
-      rect:
-        serializedVersion: 2
-        x: 2143
-        y: 980
-        width: 7
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: sheet_mom_side_11
-      rect:
-        serializedVersion: 2
-        x: 3719
-        y: 846
-        width: 6
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: sheet_mom_side_12
-      rect:
-        serializedVersion: 2
-        x: 3705
-        y: 769
-        width: 7
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: sheet_mom_side_13
-      rect:
-        serializedVersion: 2
-        x: 2464
-        y: 690
-        width: 11
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: sheet_mom_side_14
-      rect:
-        serializedVersion: 2
-        x: 2400
-        y: 673
-        width: 37
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: sheet_mom_side_15
-      rect:
-        serializedVersion: 2
-        x: 525
-        y: 183
-        width: 22
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1788
+        y: 68
+        width: 1106
+        height: 439
+      alignment: 9
+      pivot: {x: 0.025083352, y: 0.44881332}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

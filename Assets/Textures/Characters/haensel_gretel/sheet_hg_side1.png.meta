@@ -1,17 +1,19 @@
 fileFormatVersion: 2
-guid: cdf08acd1823c41cb89da3cfd098bdb9
-timeCreated: 1484784662
+guid: 74b5ee0d106354930bb0cd5ee07ec412
+timeCreated: 1484774644
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: eyes_hg_0
-    21300002: eyes_hg_1
-    21300004: eyes_hg_2
-    21300006: eyes_hg_3
-    21300008: eyes_hg_4
-    21300010: eyes_hg_5
-    21300012: eyes_hg_6
-    21300014: eyes_hg_7
+    21300000: sheet_hg_side1_0
+    21300002: sheet_hg_side1_1
+    21300004: sheet_hg_side1_2
+    21300006: sheet_hg_side1_3
+    21300008: sheet_hg_side1_4
+    21300010: sheet_hg_side1_5
+    21300012: sheet_hg_side1_6
+    21300014: sheet_hg_side1_7
+    21300016: sheet_hg_side1_8
+    21300018: sheet_hg_side1_9
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -61,106 +63,132 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: eyes_hg_0
+      name: sheet_hg_side1_0
       rect:
         serializedVersion: 2
-        x: 208
-        y: 251
-        width: 317
-        height: 374
+        x: 108
+        y: 1267
+        width: 997
+        height: 875
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: eyes_hg_1
+      name: sheet_hg_side1_1
       rect:
         serializedVersion: 2
-        x: 1070
-        y: 246
-        width: 360
-        height: 281
+        x: 887
+        y: 1265
+        width: 14
+        height: 11
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: eyes_hg_2
+      name: sheet_hg_side1_2
       rect:
         serializedVersion: 2
-        x: 1997
-        y: 243
-        width: 349
-        height: 320
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1598
+        y: 1090
+        width: 644
+        height: 1052
+      alignment: 9
+      pivot: {x: 0.46074566, y: 0.014055491}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: eyes_hg_3
+      name: sheet_hg_side1_3
       rect:
         serializedVersion: 2
-        x: 2921
-        y: 251
-        width: 324
-        height: 337
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 2768
+        y: 1081
+        width: 925
+        height: 1048
+      alignment: 9
+      pivot: {x: 0.49392682, y: 0.017561352}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: eyes_hg_4
+      name: sheet_hg_side1_4
       rect:
         serializedVersion: 2
-        x: 559
+        x: 3125
+        y: 1077
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_hg_side1_5
+      rect:
+        serializedVersion: 2
+        x: 3154
+        y: 1081
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_hg_side1_6
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 50
+        width: 1190
+        height: 980
+      alignment: 9
+      pivot: {x: 0.37962005, y: 0.024212498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_hg_side1_7
+      rect:
+        serializedVersion: 2
+        x: 1683
+        y: 256
+        width: 305
+        height: 347
+      alignment: 9
+      pivot: {x: 0.61051285, y: 0.8885461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheet_hg_side1_8
+      rect:
+        serializedVersion: 2
+        x: 3040
         y: 254
-        width: 312
-        height: 365
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 591
+        height: 396
+      alignment: 9
+      pivot: {x: 0.49049422, y: 0.946865}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: eyes_hg_5
+      name: sheet_hg_side1_9
       rect:
         serializedVersion: 2
-        x: 1461
-        y: 243
-        width: 351
-        height: 286
+        x: 565
+        y: 17
+        width: 16
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: eyes_hg_6
-      rect:
-        serializedVersion: 2
-        x: 2383
-        y: 251
-        width: 359
-        height: 315
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: eyes_hg_7
-      rect:
-        serializedVersion: 2
-        x: 3276
-        y: 254
-        width: 362
-        height: 337
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
