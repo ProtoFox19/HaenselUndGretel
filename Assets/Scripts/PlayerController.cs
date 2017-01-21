@@ -57,9 +57,23 @@ public class PlayerController : MonoBehaviour
 
     }
 
+	/*void flip() {
+
+		Vector3 myScale = transform.localScale;
+		myScale *= -1;
+		transform.localScale = myScale;
+
+	} */
+
     // Update is called once per frame
     void Update()
     {
+
+	/*	if (transform.position.x > targetWayPoint.position.x) {
+
+			flip ();
+
+		} */
 
 
 
