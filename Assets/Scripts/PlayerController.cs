@@ -241,9 +241,9 @@ public class PlayerController : MonoBehaviour
 
         if ((transform.position == targetWayPoint.position) && reachedEnd == false)
         {
-            if (!(currentWayPoint == wayPoint.Length-1))
+            if (!(currentWayPoint == wayPoint.Length - 1))
             {
-
+               
             }
             else
             {

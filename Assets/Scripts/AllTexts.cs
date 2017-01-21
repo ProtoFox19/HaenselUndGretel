@@ -23,6 +23,8 @@ public class AllTexts : MonoBehaviour {
 	private int speakerCounter = 0;
     private int spek;
 
+    public bool naechsteSzene = false;
+
     public GameObject haenselSpeaker; // 2
 
     public GameObject gretelSpeaker; // 1
@@ -165,7 +167,7 @@ public class AllTexts : MonoBehaviour {
 
         if (counter >= messages.Length-1)
         {
-
+            naechsteSzene = true;
 
             haenselSpeaker.SetActive(false);
 
@@ -184,6 +186,7 @@ public class AllTexts : MonoBehaviour {
                 haenselWalk.SetActive(false);
             }else { 
                 haenselWalk.SetActive(true);    //Die waren vorher so
+                naechsteSzene = false;
             }
 
             if (gretelPlayer.GetComponent<PlayerController>().getReachedEnd())
@@ -193,6 +196,7 @@ public class AllTexts : MonoBehaviour {
             else
             {
                 gretelWalk.SetActive(true);     //Die waren vorher so
+                naechsteSzene = false;
             }
 
             if (momPlayer.GetComponent<PlayerController>().getReachedEnd())
@@ -202,6 +206,7 @@ public class AllTexts : MonoBehaviour {
             else
             {
                 momWalk.SetActive(true);     //Die waren vorher so
+                naechsteSzene = false;
             }
 
             if (dadPlayer.GetComponent<PlayerController>().getReachedEnd())
@@ -211,6 +216,7 @@ public class AllTexts : MonoBehaviour {
             else
             {
                 dadWalk.SetActive(true);     //Die waren vorher so
+                naechsteSzene = false;
             }
 
             if (duckPlayer.GetComponent<PlayerController>().getReachedEnd())
@@ -220,9 +226,12 @@ public class AllTexts : MonoBehaviour {
             else
             {
                 duckWalk.SetActive(true);     //Die waren vorher so
+                naechsteSzene = false;
             }
 
         }
+
+        //Debug.Log(naechsteSzene);
     }
 
 	/*public void count () {
