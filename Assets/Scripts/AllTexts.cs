@@ -82,11 +82,11 @@ public class AllTexts : MonoBehaviour {
         spek = spe;
         //speakerCounter++;
         counter++;
-       /*     Debug.Log("---------------");
+            Debug.Log("---------------");
             Debug.Log("AllTextsSpe:"+spek);
         Debug.Log("Counter:" + counter);
         Debug.Log("Speaker:" + speaker[spek]);
-            Debug.Log("----------------");*/
+            Debug.Log("----------------");
         }
     }
 
