@@ -10,7 +10,7 @@ public class Waypoint : MonoBehaviour {
 
 	public bool speaks = false;
 
-	public float speakingLength;
+	//public float speakingLength;
 
 //	public GameObject sad;
 

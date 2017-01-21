@@ -1,72 +1,77 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour
+{
 
-	// Speicher für die Punkte
-	public Transform[] wayPoint;
+    // Speicher für die Punkte
+    public Transform[] wayPoint;
 
-	public int currentWayPoint = 0; 
-	Transform targetWayPoint;
+    public int currentWayPoint = 0;
+    Transform targetWayPoint;
 
-	public float speed = 4f;
+    public float speed = 4f;
 
-	bool reachedEnd = false;
+    bool reachedEnd = false;
 
-	private Animator anim;
-
-
-	private  bool walks = false;
-
-	public GameObject text;
+    private Animator anim;
 
 
+    private bool walks = false;
 
-	private AllTexts allTexts;
-
-	public float PlayerNumber;
+    public GameObject text;
 
 
 
+    private AllTexts allTexts;
 
-	public GameObject interaktionWalk;
-
-	public GameObject interactionSpeak;
-
-	//public GameObject gretelINT;
+    public float PlayerNumber;
 
 
 
 
-	//public GameObject haenselTextINT;
+    public GameObject interaktionWalk;
 
-	//public GameObject gretelTextINT;
+    public GameObject interactionSpeak;
 
-
-	// Use this for initialization
-	void Start () {
-
-		anim = GetComponent<Animator>();
-
-		//targetWayPoint = wayPoint [currentWayPoint];
-
-		allTexts = text.GetComponent<AllTexts> ();
-
-
-	}
-
-	// Update is called once per frame
-	void Update () {
+    //public GameObject gretelINT;
 
 
 
-		// Standing State
-		if (walks == false) {
 
-			if ((allTexts.currentSpeaker () == PlayerNumber)) {
+    //public GameObject haenselTextINT;
+
+    //public GameObject gretelTextINT;
 
 
-				/*if (allTexts.messages.Length <= allTexts.getCounter()) {
+    // Use this for initialization
+    void Start()
+    {
+
+        anim = GetComponent<Animator>();
+
+        //targetWayPoint = wayPoint [currentWayPoint];
+
+        allTexts = text.GetComponent<AllTexts>();
+
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+
+
+        // Standing State
+        if (walks == false)
+        {
+
+            if ((allTexts.currentSpeaker() == PlayerNumber))
+            {
+
+
+                /*if (allTexts.messages.Length <= allTexts.getCounter()) {
 
 
 
@@ -80,162 +85,191 @@ public class PlayerController : MonoBehaviour {
 				
 				
 				}*/
+                if (allTexts.getCounter() >= allTexts.messages.Length - 1)
+                {
+                    interaktionWalk.SetActive(true);
+                }else { 
+                    interaktionWalk.SetActive(false);
+                }
+            }
+            else
+            {
 
-				interaktionWalk.SetActive (false);
+                interaktionWalk.SetActive(true);
+            }
 
-			} else {
+            anim.SetBool("isFront", true);
+            anim.SetBool("isSide", false);
+            anim.SetBool("walk", false);
 
-				interaktionWalk.SetActive (true);
-			}
 
-			anim.SetBool ("isFront", true);
-			anim.SetBool ("isSide", false);
-			anim.SetBool ("walk", false);
+            // Delight stand
+            if (wayPoint[currentWayPoint].GetComponent<Waypoint>().delight == true)
+            {
 
+                anim.SetBool("isDelight", true);
+                anim.SetBool("isSad", false);
+                anim.SetBool("isSide", false);
+                anim.SetBool("isFront", true);
 
-			// Delight stand
-			if (wayPoint [currentWayPoint].GetComponent<Waypoint> ().delight == true) {
+            }
 
-				anim.SetBool ("isDelight", true);
-				anim.SetBool ("isSad", false);
-				anim.SetBool ("isSide", false);
-				anim.SetBool ("isFront", true);
+            // sad stand
+            if (wayPoint[currentWayPoint].GetComponent<Waypoint>().sad == true)
+            {
 
-			} 
+                anim.SetBool("isDelight", false);
+                anim.SetBool("isSad", true);
+                anim.SetBool("isSide", false);
+                anim.SetBool("isFront", true);
 
-			// sad stand
-			if (wayPoint [currentWayPoint].GetComponent<Waypoint> ().sad == true) {
+            }
 
-				anim.SetBool ("isDelight", false);
-				anim.SetBool ("isSad", true);
-				anim.SetBool ("isSide", false);
-				anim.SetBool ("isFront", true);
 
-			}
+        }
 
+        if ((reachedEnd == false) && isWalking())
+        {
 
-		}
+            targetWayPoint = wayPoint[currentWayPoint];
 
+            walk();
 
+        }
 
-		if ((reachedEnd == false) && isWalking()) {
+    }
 
-			targetWayPoint = wayPoint [currentWayPoint];
 
-			walk ();
 
-		}
+    public void startWalking()
+    {
 
-	}
+        if (currentWayPoint == wayPoint.Length)
+        {
 
+            return;
+        }
+        else
+        {
+            currentWayPoint++;
 
+            targetWayPoint = wayPoint[currentWayPoint];
+        }
 
-	public void startWalking () {
+    }
 
-		if (currentWayPoint == wayPoint.Length) {
 
-			return;
-		} else {
-			currentWayPoint++;
 
-			targetWayPoint = wayPoint [currentWayPoint];
-		}
+    public bool isWalking()
+    {
 
-	}
+        if ((transform.position == targetWayPoint.position))
+        {
+            walks = false;
 
+        }
+        else
+        {
+            walks = true;
+        }
 
+        return walks;
+    }
 
 
-	public bool isWalking () {
 
-		if ((transform.position == targetWayPoint.position)) {
-			walks = false;
+    void walk()
+    {
 
-		} else {
-			walks = true;
-		}
+        interaktionWalk.SetActive(false);
 
-		return walks;
-	}
+        //haenselTextINT.SetActive (false);
 
 
 
-	void walk() {
+        anim.SetBool("isSide", true);
+        anim.SetBool("isFront", false);
+        anim.SetBool("walk", true);
 
-		interaktionWalk.SetActive (false);
 
-		//haenselTextINT.SetActive (false);
 
 
+        // Delight Walk
+        if (wayPoint[currentWayPoint].GetComponent<Waypoint>().delight == true)
+        {
 
-		anim.SetBool ("isSide", true);
-		anim.SetBool ("isFront", false);
-		anim.SetBool ("walk", true);
+            anim.SetBool("isDelight", true);
+            anim.SetBool("isSad", false);
+            anim.SetBool("isSide", true);
+            anim.SetBool("isFront", false);
 
+        }
 
+        // Sad Walk
+        if (wayPoint[currentWayPoint].GetComponent<Waypoint>().sad == true)
+        {
 
+            anim.SetBool("isDelight", false);
+            anim.SetBool("isSad", true);
+            anim.SetBool("isSide", true);
+            anim.SetBool("isFront", false);
 
-		// Delight Walk
-		if (wayPoint [currentWayPoint].GetComponent<Waypoint> ().delight == true) {
+        }
 
-			anim.SetBool ("isDelight", true);
-			anim.SetBool ("isSad", false);
-			anim.SetBool ("isSide", true);
-			anim.SetBool ("isFront", false);
+        if (wayPoint[currentWayPoint].GetComponent<Waypoint>().speaks == true)
+        {
 
-		}
 
-		// Sad Walk
-		if (wayPoint [currentWayPoint].GetComponent<Waypoint> ().sad == true) {
+            anim.SetBool("speaksSide", true);
+            anim.SetBool("speaksFront", false);
 
-			anim.SetBool ("isDelight", false);
-			anim.SetBool ("isSad", true);
-			anim.SetBool ("isSide", true);
-			anim.SetBool ("isFront", false);
+        }
 
-		}
 
-		if (wayPoint [currentWayPoint].GetComponent<Waypoint> ().speaks == true) {
 
+        // Bewegen zum Ziel
+        transform.position = Vector3.MoveTowards(transform.position, targetWayPoint.position, speed * Time.deltaTime);
 
-			anim.SetBool ("speaksSide", true);
-			anim.SetBool ("speaksFront", false);
+        if ((transform.position == targetWayPoint.position) && reachedEnd == false)
+        {
+            if (!(currentWayPoint == wayPoint.Length))
+            {
 
-		}
 
+            }
+            else
+            {
 
+                reachedEnd = true;
+            }
+        }
+        else { walks = false; }
 
-		// Bewegen zum Ziel
-		transform.position = Vector3.MoveTowards(transform.position, targetWayPoint.position, speed*Time.deltaTime);
 
-		if((transform.position == targetWayPoint.position) && reachedEnd == false) {
-			if (!(currentWayPoint == wayPoint.Length)) {
 
 
-			} else {
 
-				reachedEnd = true;
-			}
-		} else { walks = false; }
 
+        if ((transform.position == targetWayPoint.position) && reachedEnd == true)
+        {
 
+            if (!(currentWayPoint == 0))
+            {
 
+                walks = true;
 
+                //currentWayPoint -- ;
+                targetWayPoint = wayPoint[currentWayPoint];
 
+            }
+            else
+            {
 
-		if((transform.position == targetWayPoint.position) && reachedEnd == true) {
-
-			if (!(currentWayPoint == 0)) {
-
-				walks = true;
-
-				//currentWayPoint -- ;
-				targetWayPoint = wayPoint[currentWayPoint];
-
-			} else {
-
-				reachedEnd = false;
-			}
-		} { walks = false; }
-	} 
+                reachedEnd = false;
+            }
+        }
+        { walks = false; }
+    }
 }
+
+

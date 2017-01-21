@@ -35,8 +35,8 @@ public class Interaktion : MonoBehaviour {
 
 	private void OnMouseDown() {
 
-		playerController.startWalking ();
-
+        	playerController.startWalking ();
+       
 
 		//GameObject.FindGameObjectWithTag ("haensel").GetComponent<PlayerController> ().startWalking();
 
