@@ -43,13 +43,24 @@ public class AllTexts : MonoBehaviour {
 
     public GameObject duckWalk; // 5
 
+
+    public GameObject haenselPlayer; // 2
+
+    public GameObject gretelPlayer; // 1
+
+    public GameObject momPlayer; // 3
+
+    public GameObject dadPlayer; // 4
+
+    public GameObject duckPlayer; // 5
+
     //public GameObject [] speakingCheckpoints;
 
 
 
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 
 		text = GetComponent<Text> ();
         spek = 0;       
@@ -69,11 +80,11 @@ public class AllTexts : MonoBehaviour {
         spek = spe;
         //speakerCounter++;
         counter++;
-            Debug.Log("---------------");
+       /*     Debug.Log("---------------");
             Debug.Log("AllTextsSpe:"+spek);
         Debug.Log("Counter:" + counter);
         Debug.Log("Speaker:" + speaker[spek]);
-            Debug.Log("----------------");
+            Debug.Log("----------------");*/
         }
     }
 
@@ -166,15 +177,51 @@ public class AllTexts : MonoBehaviour {
 
             duckSpeaker.SetActive(false);
 
-            haenselWalk.SetActive(true);
 
-            gretelWalk.SetActive(true);
 
-            momWalk.SetActive(true);
+            if (haenselPlayer.GetComponent<PlayerController>().getReachedEnd())
+            {
+                haenselWalk.SetActive(false);
+            }else { 
+                haenselWalk.SetActive(true);    //Die waren vorher so
+            }
 
-            dadWalk.SetActive(true);
+            if (gretelPlayer.GetComponent<PlayerController>().getReachedEnd())
+            {
+                gretelWalk.SetActive(false);
+            }
+            else
+            {
+                gretelWalk.SetActive(true);     //Die waren vorher so
+            }
 
-            duckWalk.SetActive(true);
+            if (momPlayer.GetComponent<PlayerController>().getReachedEnd())
+            {
+                momWalk.SetActive(false);
+            }
+            else
+            {
+                momWalk.SetActive(true);     //Die waren vorher so
+            }
+
+            if (dadPlayer.GetComponent<PlayerController>().getReachedEnd())
+            {
+                dadWalk.SetActive(false);
+            }
+            else
+            {
+                dadWalk.SetActive(true);     //Die waren vorher so
+            }
+
+            if (duckPlayer.GetComponent<PlayerController>().getReachedEnd())
+            {
+                duckWalk.SetActive(false);
+            }
+            else
+            {
+                duckWalk.SetActive(true);     //Die waren vorher so
+            }
+
         }
     }
 

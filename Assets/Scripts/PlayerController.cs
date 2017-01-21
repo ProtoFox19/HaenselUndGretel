@@ -87,15 +87,24 @@ public class PlayerController : MonoBehaviour
 				}*/
                 if (allTexts.getCounter() >= allTexts.messages.Length - 1)
                 {
-                    interaktionWalk.SetActive(true);
+                    if (reachedEnd)
+                    {
+                        interaktionWalk.SetActive(false);
+                    }else { 
+                        interaktionWalk.SetActive(true);
+                    }
                 }else { 
                     interaktionWalk.SetActive(false);
                 }
             }
             else
             {
-
-                interaktionWalk.SetActive(true);
+                if (reachedEnd)
+                {
+                    interaktionWalk.SetActive(false);
+                }else { 
+                    interaktionWalk.SetActive(true);
+                }
             }
 
             anim.SetBool("isFront", true);
@@ -232,43 +241,27 @@ public class PlayerController : MonoBehaviour
 
         if ((transform.position == targetWayPoint.position) && reachedEnd == false)
         {
-            if (!(currentWayPoint == wayPoint.Length))
+            if (!(currentWayPoint == wayPoint.Length-1))
             {
-
 
             }
             else
             {
 
+                anim.SetBool("isFront", true);
+                anim.SetBool("isSide", false);
+                anim.SetBool("walk", false);
                 reachedEnd = true;
             }
         }
         else { walks = false; }
 
 
+    }
 
-
-
-
-        if ((transform.position == targetWayPoint.position) && reachedEnd == true)
-        {
-
-            if (!(currentWayPoint == 0))
-            {
-
-                walks = true;
-
-                //currentWayPoint -- ;
-                targetWayPoint = wayPoint[currentWayPoint];
-
-            }
-            else
-            {
-
-                reachedEnd = false;
-            }
-        }
-        { walks = false; }
+    public bool getReachedEnd()
+    {
+        return reachedEnd;
     }
 }
 
