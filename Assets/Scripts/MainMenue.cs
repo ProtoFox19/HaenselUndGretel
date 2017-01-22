@@ -6,55 +6,24 @@ using UnityEngine.UI;
 public class MainMenue : MonoBehaviour {
 
     //Die Panels die jeweils sichtbar und unsichtbar gemacht werden sollen
-    public GameObject Hauptmenue, Optionenmenue, Impressummenue;
+    public GameObject Hauptmenue, Impressummenue;
 
 
     //Wenn auf Level geklickt wurde
-    public void OnNeuStarten(bool clicked)
+    public void OnNeuStarten()
     {
-       
-        if (clicked)
-        {
-
-        }
-        else
-        {
-
-        }
+       PlayerPrefs.DeleteAll();
+       StartCoroutine(FadeOUT("Frame1"));
     }
 
     //Wenn auf Level geklickt wurde
-    public void OnFortsetzen(bool clicked)
+    public void OnFortsetzen()
     {
-
-        if (clicked)
-        {
-
-        }
-        else
-        {
-
-        }
+        string scene = PlayerPrefs.GetString("aktuelleSzene");
+        SceneManager.LoadScene(scene);
     }
 
-    //Wenn auf Obtionen geklickt wurde
-    public void OnOptionen(bool clicked)
-    {
-        if (clicked)
-        {
-            Optionenmenue.SetActive(clicked);        //wird das OptionsmenuePanel sichtbar gemacht
-            Hauptmenue.SetActive(!clicked);          //wird das HauptmenuePanel unsichtbar gemacht
-            Impressummenue.SetActive(!clicked);
 
-        }
-        else
-        {
-            Optionenmenue.SetActive(clicked);
-            Hauptmenue.SetActive(!clicked);
-            Impressummenue.SetActive(clicked);
-
-        }
-    }
 
     //Wenn auf Impressum geklickt wurde
     public void OnImpressum(bool clicked)
@@ -63,14 +32,12 @@ public class MainMenue : MonoBehaviour {
         {
             Impressummenue.SetActive(clicked);
             Hauptmenue.SetActive(!clicked);
-            Optionenmenue.SetActive(!clicked);
 
         }
         else
         {
             Impressummenue.SetActive(clicked);
             Hauptmenue.SetActive(!clicked);
-            Optionenmenue.SetActive(clicked);
 
         }
     }
@@ -81,20 +48,15 @@ public class MainMenue : MonoBehaviour {
     }
 
 
-
-
-    public void OnZuruecksetzen(bool clicked)
+    IEnumerator FadeOUT(string scene)
     {
-        if (clicked)
-        {
-            PlayerPrefs.DeleteAll();
-            Optionenmenue.SetActive(!clicked);
-            Hauptmenue.SetActive(clicked);
-            Impressummenue.SetActive(!clicked);
+        GameObject.Find("Main Camera").GetComponent<Fading>().BeginFade(1);
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(scene);
 
-            SceneManager.LoadScene(0);
-        }
     }
+
+
 
 
 

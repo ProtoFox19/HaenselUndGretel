@@ -23,7 +23,7 @@ public class staticSendText : MonoBehaviour {
 			// spe++;Debug.Log("H:" + spe);
 		}
 
-		Debug.Log("spe:"+spe);
+		//Debug.Log("spe:"+spe);
 
 		GameObject.FindGameObjectWithTag ("AllText").GetComponent<AllTextsStatic> ().countSpeaker (spe);
 

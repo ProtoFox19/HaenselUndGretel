@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class staticCount : MonoBehaviour {
-	private int zaehler = 0;
+	private int zaehler = 1;
 
 	public int getZaehler()
 	{

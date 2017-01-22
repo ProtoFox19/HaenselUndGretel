@@ -40,7 +40,7 @@ public class sendText : MonoBehaviour {
             zaehler.GetComponent<Count>().setZaehler(spe + 1);
             //spe++;Debug.Log("G:" + spe);
         }
-        Debug.Log("spe:"+spe);
+       // Debug.Log("spe:"+spe);
 
         GameObject.FindGameObjectWithTag ("AllText").GetComponent<AllTexts> ().countSpeaker (spe);
 
