@@ -15,7 +15,7 @@ public class HasReachedKomode : MonoBehaviour {
     void Start () {
         allTexts = text.GetComponent<AllTexts>();
         PlayerPrefs.SetString("aktuelleSzene", SceneManager.GetActiveScene().name);
-        Debug.Log(PlayerPrefs.GetInt("zaehler"));
+       // Debug.Log(PlayerPrefs.GetInt("zaehler"));
     }
 	
 	// Update is called once per frame

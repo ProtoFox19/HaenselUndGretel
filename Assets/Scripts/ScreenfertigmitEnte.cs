@@ -24,11 +24,11 @@ public class ScreenfertigmitEnte : MonoBehaviour {
         zaehlerh = schrittzaehlerH.GetComponent<ChCounter>().getZaehler();
         zaehlerg = schrittzaehlerG.GetComponent<ChCounter>().getZaehler();
         zaehlerd = schrittzaehlerD.GetComponent<ChCounter>().getZaehler();
-        Debug.Log(zaehlerh);
+      /*  Debug.Log(zaehlerh);
         Debug.Log(zaehlerg);
         Debug.Log(zaehlerd);
         Debug.Log("C:"+allTexts.getCounter());
-        Debug.Log("L:"+allTexts.messages.Length);
+        Debug.Log("L:"+allTexts.messages.Length);*/
         if (allTexts.getCounter() >= allTexts.messages.Length - 1 && !haensel.activeSelf && !gretel.activeSelf && !duck.activeSelf && zaehlerh>=schritteHaensel && zaehlerg>=schritteGretel && zaehlerd>=schritteEnte)
         {
             //Debug.Log(SceneManager.GetActiveScene().name);

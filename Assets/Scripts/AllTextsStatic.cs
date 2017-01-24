@@ -43,7 +43,7 @@ public class AllTextsStatic : MonoBehaviour {
         PlayerPrefs.SetString("aktuelleSzene", SceneManager.GetActiveScene().name);
 
 
-        Debug.Log(PlayerPrefs.GetInt("zaehler"));
+       // Debug.Log(PlayerPrefs.GetInt("zaehler"));
 
     }
 

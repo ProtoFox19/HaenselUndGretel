@@ -21,7 +21,7 @@ public class Screenfertig : MonoBehaviour {
         //Debug.Log(zaehler);
         if (allTexts.getCounter() >= allTexts.messages.Length - 1 && !haensel.activeSelf && !gretel.activeSelf && !dad.activeSelf && !mom.activeSelf && zaehler>=5)
         {
-            Debug.Log("geht in nächsten Frame");
+           // Debug.Log("geht in nächsten Frame");
             string buchstabe = PlayerPrefs.GetString("Frame3");
             PlayerPrefs.SetString("Frame4", buchstabe);
             StartCoroutine(FadeOUT("Frame4"));
